@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "default": "acuron-portfolio1"
+  },
+  "targets": {
+    "acuron-portfolio1": {
+      "hosting": {
+        "main": ["acuron-portfolio2"]
+      }
+    }
+  }
+}
