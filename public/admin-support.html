@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Support - Acuron</title>
+
+<style>
+
+body{
+background:#081b2e;
+font-family:Arial;
+color:white;
+padding:40px;
+}
+
+h1{
+margin-bottom:30px;
+}
+
+.message-card{
+background:#0f2a44;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.message-card h3{
+color:#00E5FF;
+margin-bottom:10px;
+}
+
+.message-card p{
+margin:4px 0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Support Messages</h1>
+
+<div id="messages-container"></div>
+
+<!-- Firebase -->
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+<script src="firebase-config.js"></script>
+<script src="admin-support.js"></script>
+
+<script>
+
+const container = document.getElementById("messages-container");
+
+db.collection("supportMessages")
+.orderBy("timestamp","desc")
+.onSnapshot((snapshot)=>{
+
+container.innerHTML="";
+
+snapshot.forEach((doc)=>{
+
+const data = doc.data();
+
+container.innerHTML += `
+
+<div class="message-card">
+
+<h3>${data.subject || "Contact Message"}</h3>
+
+<p><b>Name:</b> ${data.name}</p>
+
+<p><b>Email:</b> ${data.email}</p>
+
+<p><b>Message:</b> ${data.message}</p>
+
+</div>
+
+`;
+
+});
+
+});
+
+</script>
+
+</body>
+</html><!-- v2 -->

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="firebase.js"></script> -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact — Acuron IT Services</title>
+
+    <meta name="description" content="Contact Acuron IT Services for AI, Cloud, and Enterprise Software Solutions.">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/icons/favicon.svg">
+
+    <style>
+        .contact-hero {
+            margin-top: 120px;
+            padding: 80px 0 40px 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 24px;
+            border-radius: 10px;
+        }
+
+        .contact-box h4 {
+            margin-bottom: 6px;
+            color: var(--cyan);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+            color: var(--gray-400);
+        }
+
+        .form-group input,
+        .form-group textarea {
+
+            background: #0D2B4E;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 12px;
+            border-radius: 6px;
+            color: white;
+            font-size: 0.9rem;
+
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+
+            outline: none;
+            border-color: var(--cyan);
+
+        }
+
+        .success-msg {
+            margin-top: 10px;
+            color: #10B981;
+            font-size: 0.9rem;
+        }
+
+        @media(max-width:900px) {
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav id="navbar">
+
+        <div class="nav-inner">
+
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">A</div>
+                Acuron <span>IT</span>
+            </a>
+
+            <div class="nav-right">
+
+                <a href="index.html" class="btn btn-outline btn-sm">Home</a>
+
+                <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="contact-hero">
+
+        <div class="container">
+
+            <div class="section-label">
+                Contact
+            </div>
+
+            <h1 class="section-title">
+                Talk to Our Technology Experts
+            </h1>
+
+            <p class="section-subtitle">
+                Whether you're exploring AI transformation, cloud modernization, or enterprise software development —
+                our experts are ready to help.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CONTACT SECTION -->
+
+    <section class="section-pad">
+
+        <div class="container">
+
+            <div class="contact-grid">
+
+
+                <!-- CONTACT FORM -->
+
+                <div class="contact-card">
+
+                    <h3 style="margin-bottom:20px">
+                        Send us a message
+                    </h3>
+
+                    <form id="contact-form">
+
+
+                        <div class="form-group">
+
+                            <label>Full Name</label>
+
+                            <input type="text" id="name" placeholder="Your Name" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Email</label>
+
+                            <input type="email" id="email" placeholder="Your Email" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Company</label>
+
+                            <input type="text" id="company" placeholder="Your company">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Message</label>
+
+                            <textarea id="message" rows="5"placeholder="Message" required></textarea>
+
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">
+
+                            Send Message
+
+                        </button>
+
+
+                        <div id="contact-success" class="success-msg">
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+                <!-- CONTACT INFO -->
+
+                <div class="contact-info">
+
+
+                    <div class="contact-box">
+
+                        <h4>Company</h4>
+
+                        <p>
+                            Acuron IT Services<br>
+                            Engineering Intelligent Digital Solutions
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-box">
+
+                        <h4>Email</h4>
+
+                        <p>
+                            acuronitservices@gmail.com
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-box">
+
+                        <h4>Phone</h4>
+
+                        <p>
+                            +91 91502 70802
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-box">
+
+                        <h4>LinkedIn</h4>
+
+                        <p>
+                            <a href="https://www.linkedin.com/in/acuron-it-services-1912163a8/">
+                                linkedin.com/company/acuron-it-services
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-box">
+
+                        <h4>Instagram</h4>
+
+                        <p>
+                            <a href="https://instagram.com/acuronitservices">
+                                instagram.com/acuronitservices
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- GOOGLE MAP -->
+
+    <section>
+
+        <iframe width="100%" height="350" style="border:0" loading="lazy" allowfullscreen
+            src="https://maps.google.com/maps?q=Nagercoil&t=&z=13&ie=UTF8&iwloc=&output=embed">
+
+        </iframe>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer style="
+padding:40px 0;
+background:#08192e;
+margin-top:60px">
+
+        <div class="container">
+
+            <p style="
+text-align:center;
+color:#94A3B8">
+
+                © 2026 Acuron IT Services. All rights reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- FIREBASE -->
+
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+<script src="firebase-config.js"></script>
+<script>
+    document.getElementById("contact-form").addEventListener("submit", async (e) => {
+
+e.preventDefault();
+
+const name = document.getElementById("name").value;
+const email = document.getElementById("email").value;
+const subject = document.getElementById("company").value;
+const message = document.getElementById("message").value;
+
+try {
+
+await db.collection("supportMessages").add({
+
+name: name,
+email: email,
+subject: subject,
+message: message,
+timestamp: new Date()
+
+});
+
+alert("Message sent successfully");
+
+document.getElementById("contact-form").reset();
+
+} catch (err) {
+
+console.error(err);
+alert("Error sending message");
+
+}
+
+});
+</script>
+</body>
+
+</html><!-- v2 -->

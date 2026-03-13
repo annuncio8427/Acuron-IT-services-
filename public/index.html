@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Acuron IT Services — Engineering Intelligent Digital Solutions. AI, Cloud, Software Development, Cybersecurity & Enterprise IT Consulting." />
+  <meta name="keywords" content="AI solutions, cloud engineering, software development, cybersecurity, IT consulting, DevOps, enterprise technology" />
+  <meta name="author" content="Acuron IT Services" />
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Acuron IT Services — Engineering Intelligent Digital Solutions" />
+  <meta property="og:description" content="Helping enterprises innovate faster with intelligent technology solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://acuronit.com" />
+  <meta property="og:image" content="/assets/images/og-image.png" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Acuron IT Services" />
+  <meta name="twitter:description" content="Engineering Intelligent Digital Solutions" />
+  <title>Acuron IT Services — Engineering Intelligent Digital Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+
+<!-- ── Page Loader ──────────────────────────────────────────── -->
+<div id="page-loader" role="status" aria-label="Loading Acuron IT Services">
+  <div class="loader-logo">A<span>curon</span></div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- ── Cookie Banner ────────────────────────────────────────── -->
+<div id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <p class="cookie-text">
+    <strong>🍪 Cookie Notice</strong> — This website uses cookies to improve your experience and provide analytics insights.
+  </p>
+  <div class="cookie-btns">
+    <button id="cookie-manage" class="btn btn-outline btn-sm">Manage</button>
+    <button id="cookie-accept" class="btn btn-primary btn-sm">Accept All</button>
+  </div>
+</div>
+
+<!-- ── Navigation ───────────────────────────────────────────── -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <!-- Logo -->
+    <a href="index.html" class="nav-logo" aria-label="Acuron IT Services Home">
+      <div class="logo-icon" aria-hidden="true">A</div>
+      Acuron <span>IT</span>
+    </a>
+
+    <!-- Center mega menu -->
+    <ul class="nav-center" role="menubar">
+      <!-- What We Do -->
+      <li class="nav-item" role="none">
+        <a href="#services" class="nav-link" role="menuitem" aria-haspopup="true" aria-expanded="false">
+          What We Do
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <div class="mega-menu" role="menu" aria-label="Services">
+          <div class="mega-menu-grid">
+            <a href="ai-solutions.html" class="mega-menu-item" role="menuitem">
+              <div class="mega-menu-item-icon" aria-hidden="true">🤖</div>
+              <div class="mega-menu-item-text"><div class="label">AI Solutions</div><div class="desc">ML & intelligent systems</div></div>
+            </a>
+            <a href="cloud-engineering.html" class="mega-menu-item" role="menuitem">
+              <div class="mega-menu-item-icon" aria-hidden="true">☁️</div>
+              <div class="mega-menu-item-text"><div class="label">Cloud Engineering</div><div class="desc">AWS, Azure, GCP</div></div>
+            </a>
+            <a href="#" class="mega-menu-item" role="menuitem">
+              <div class="mega-menu-item-icon" aria-hidden="true">📱</div>
+              <div class="mega-menu-item-text"><div class="label">App Development</div><div class="desc">Web & mobile solutions</div></div>
+            </a>
+            <a href="cybersecurity.html" class="mega-menu-item" role="menuitem">
+              <div class="mega-menu-item-icon" aria-hidden="true">🔒</div>
+              <div class="mega-menu-item-text"><div class="label">Cybersecurity</div><div class="desc">Zero Trust & compliance</div></div>
+            </a>
+            <a href="devops.html" class="mega-menu-item" role="menuitem">
+              <div class="mega-menu-item-icon" aria-hidden="true">⚙️</div>
+              <div class="mega-menu-item-text"><div class="label">DevOps Automation</div><div class="desc">CI/CD & infrastructure</div></div>
+            </a>
+            <a href="data-analytics.html" class="mega-menu-item" role="menuitem">
+              <div class="mega-menu-item-icon" aria-hidden="true">📊</div>
+              <div class="mega-menu-item-text"><div class="label">Data Analytics</div><div class="desc">BI & automation</div></div>
+            </a>
+          </div>
+        </div>
+      </li>
+      <!-- Industries -->
+      <li class="nav-item" role="none">
+        <a href="#" class="nav-link" role="menuitem" aria-haspopup="true">
+          Industries
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <div class="mega-menu" role="menu">
+          <div class="mega-menu-grid">
+            <a href="finance.html" class="mega-menu-item" role="menuitem"><div class="mega-menu-item-icon">🏦</div><div class="mega-menu-item-text"><div class="label">Finance</div><div class="desc">FinTech & banking</div></div></a>
+            <a href="healthcare.html" class="mega-menu-item" role="menuitem"><div class="mega-menu-item-icon">🏥</div><div class="mega-menu-item-text"><div class="label">Healthcare</div><div class="desc">Digital health</div></div></a>
+            <a href="retail.html" class="mega-menu-item" role="menuitem"><div class="mega-menu-item-icon">🏭</div><div class="mega-menu-item-text"><div class="label">Manufacturing</div><div class="desc">Industry 4.0</div></div></a>
+            <a href="manufacturing.html" class="mega-menu-item" role="menuitem"><div class="mega-menu-item-icon">🛒</div><div class="mega-menu-item-text"><div class="label">Retail</div><div class="desc">E-commerce & CX</div></div></a>
+            <a href="logistics.html" class="mega-menu-item" role="menuitem"><div class="mega-menu-item-icon">🚚</div><div class="mega-menu-item-text"><div class="label">Logistics</div><div class="desc">Supply chain tech</div></div></a>
+            <a href="smart-cities.html" class="mega-menu-item" role="menuitem"><div class="mega-menu-item-icon">🌆</div><div class="mega-menu-item-text"><div class="label">Smart Cities</div><div class="desc">Urban tech solutions</div></div></a>
+          </div>
+        </div>
+      </li>
+      <!-- Who We Are -->
+      <li class="nav-item" role="none">
+        <a href="#" class="nav-link" role="menuitem" aria-haspopup="true">
+          Who We Are
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <div class="mega-menu" role="menu">
+          <div class="mega-menu-grid">
+            <a href="about.html" class="mega-menu-item" role="menuitem"><div class="mega-menu-item-icon">🏢</div><div class="mega-menu-item-text"><div class="label">About Acuron</div><div class="desc">Our story & values</div></div></a>
+            <a href="#" class="mega-menu-item" role="menuitem"><div class="mega-menu-item-icon">👥</div><div class="mega-menu-item-text"><div class="label">Leadership</div><div class="desc">Executive team</div></div></a>
+            <a href="mission.html" class="mega-menu-item" role="menuitem"><div class="mega-menu-item-icon">🎯</div><div class="mega-menu-item-text"><div class="label">Mission & Vision</div><div class="desc">What drives us</div></div></a>
+            <a href="global.html" class="mega-menu-item" role="menuitem"><div class="mega-menu-item-icon">🌍</div><div class="mega-menu-item-text"><div class="label">Global Presence</div><div class="desc">15+ countries</div></div></a>
+          </div>
+        </div>
+      </li>
+      <!-- Resources -->
+      <li class="nav-item" role="none">
+        <a href="#insights" class="nav-link" role="menuitem" aria-haspopup="true">
+          Resources
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <div class="mega-menu" role="menu">
+          <div class="mega-menu-grid">
+            <a href="#case-studies" class="mega-menu-item" role="menuitem"><div class="mega-menu-item-icon">📋</div><div class="mega-menu-item-text"><div class="label">Case Studies</div></div></a>
+            <a href="#insights" class="mega-menu-item" role="menuitem"><div class="mega-menu-item-icon">💡</div><div class="mega-menu-item-text"><div class="label">Tech Insights</div></div></a>
+            <a href="#insights" class="mega-menu-item" role="menuitem"><div class="mega-menu-item-icon">✍️</div><div class="mega-menu-item-text"><div class="label">Blog</div></div></a>
+            <a href="#" class="mega-menu-item" role="menuitem"><div class="mega-menu-item-icon">📄</div><div class="mega-menu-item-text"><div class="label">Whitepapers</div></div></a>
+          </div>
+        </div>
+      </li>
+      <!-- Careers -->
+      <li class="nav-item" role="none">
+        <a href="#careers-banner" class="nav-link" role="menuitem">Careers</a>
+      </li>
+    </ul>
+
+    <!-- Right utility -->
+    <div class="nav-right">
+      <button id="search-btn" class="nav-icon-btn" aria-label="Search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+      <button class="nav-icon-btn" aria-label="Language selector">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+      </button>
+      <!-- Auth states -->
+      <div id="user-menu" class="user-menu" onclick="signOut()" title="Click to sign out">
+        <img id="user-avatar" class="user-avatar" src="" alt="User avatar" />
+        <span id="user-name"></span>
+      </div>
+      <a href="login.html" id="login-btn" class="btn btn-outline btn-sm">Login</a>
+      <a href="contact.html" class="btn btn-primary btn-sm" aria-label="Contact Acuron IT Services">Contact Us</a>
+    </div>
+
+    <!-- Hamburger -->
+    <button id="hamburger" class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div id="mobile-nav" class="mobile-nav" role="dialog" aria-label="Mobile navigation menu">
+  <div class="mobile-nav-links">
+    <a href="#services" class="mobile-nav-link">What We Do</a>
+    <a href="#" class="mobile-nav-link">Industries</a>
+    <a href="#" class="mobile-nav-link">Who We Are</a>
+    <a href="#insights" class="mobile-nav-link">Resources</a>
+    <a href="#careers-banner" class="mobile-nav-link">Careers</a>
+  </div>
+  <div class="mobile-nav-actions">
+    <a href="login.html" class="btn btn-outline btn-full">Login</a>
+    <a href="#" class="btn btn-primary btn-full">Contact Us</a>
+  </div>
+</div>
+
+<!-- ── HERO SECTION ──────────────────────────────────────────── -->
+<section id="hero" aria-label="Hero — Accelerating Digital Transformation">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot" aria-hidden="true"></span>
+      Trusted by 200+ Enterprises Globally
+    </div>
+    <h1 class="hero-title">
+      Accelerating Digital<br />
+      <span class="line2">Transformation with AI & Cloud</span>
+    </h1>
+    <p class="hero-subtitle">
+      Helping enterprises innovate faster with intelligent technology solutions — from AI-powered automation to cloud-native architectures.
+    </p>
+    <div class="hero-actions">
+      <a href="#services" class="btn btn-primary">
+        Explore Solutions
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#ai-assistant" class="btn btn-outline">Talk to Our AI Expert</a>
+    </div>
+  </div>
+
+  <!-- Stats strip -->
+  <div class="hero-stats" role="list">
+    <div class="hero-stat" role="listitem">
+      <span class="hero-stat-num" data-count="200" data-suffix="+" aria-label="200 plus global clients">0+</span>
+      <div class="hero-stat-label">Global Clients</div>
+    </div>
+    <div class="hero-stat" role="listitem">
+      <span class="hero-stat-num" data-count="50" data-suffix="+" aria-label="50 plus enterprise projects">0+</span>
+      <div class="hero-stat-label">Enterprise Projects</div>
+    </div>
+    <div class="hero-stat" role="listitem">
+      <span class="hero-stat-num" data-count="15" data-suffix="+" aria-label="15 plus countries served">0+</span>
+      <div class="hero-stat-label">Countries Served</div>
+    </div>
+    <div class="hero-stat" role="listitem">
+      <span class="hero-stat-num" data-count="100" data-suffix="+" aria-label="100 plus engineers and experts">0+</span>
+      <div class="hero-stat-label">Engineers & Experts</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<div class="glow-divider" aria-hidden="true"></div>
+
+<!-- ── AI ASSISTANT SECTION ─────────────────────────────────── -->
+<section id="ai-assistant" aria-label="Acuron AI Assistant">
+  <div class="container">
+    <div class="ai-widget reveal">
+      <div class="ai-widget-header">
+        <div class="ai-widget-icon" aria-hidden="true">🤖</div>
+        <div>
+          <div class="ai-widget-title">Ask Acuron AI</div>
+          <div class="ai-widget-subtitle">Get instant answers about our services & technology solutions</div>
+        </div>
+      </div>
+      <div class="ai-input-wrap">
+        <textarea
+          id="ai-input"
+          class="ai-input"
+          rows="1"
+          placeholder="How can AI improve my business? Ask anything..."
+          aria-label="Ask Acuron AI a question"
+        ></textarea>
+        <button id="ai-submit" class="btn btn-primary" aria-label="Submit question to AI">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          Ask
+        </button>
+      </div>
+      <div class="ai-chips" role="list" aria-label="Example prompts">
+        <button class="ai-chip" role="listitem">💡 How can AI improve my business?</button>
+        <button class="ai-chip" role="listitem">☁️ Cloud migration strategies</button>
+        <button class="ai-chip" role="listitem">📱 Build enterprise mobile apps</button>
+        <button class="ai-chip" role="listitem">🔒 Cybersecurity for startups</button>
+      </div>
+      <div id="ai-response" class="ai-response" aria-live="polite" aria-label="AI response"></div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-divider" aria-hidden="true"></div>
+
+<!-- ── SERVICES SECTION ─────────────────────────────────────── -->
+<section id="services" aria-label="Core Services" class="section-pad">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Enterprise-Grade Technology Solutions</h2>
+      <p class="section-subtitle">From intelligent AI systems to robust cloud infrastructure — we engineer the digital backbone of tomorrow's enterprises.</p>
+    </div>
+
+    <!-- 3 hero service cards -->
+    <div class="services-grid" style="margin-top:60px;">
+      <div class="service-card reveal reveal-delay-1" tabindex="0">
+        <div class="service-card-icon" aria-hidden="true">🤖</div>
+        <h3 class="service-card-title">AI & Machine Learning</h3>
+        <p class="service-card-desc">Custom ML models, NLP pipelines, computer vision, and AI-powered automation that transforms raw data into competitive advantage. From model training to production deployment.</p>
+        <a href="ai-solutions.html" class="service-card-link">
+          Learn More
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="service-card purple reveal reveal-delay-2" tabindex="0">
+        <div class="service-card-icon" aria-hidden="true">☁️</div>
+        <h3 class="service-card-title">Cloud Engineering & DevOps</h3>
+        <p class="service-card-desc">Multi-cloud architecture, Kubernetes orchestration, CI/CD pipelines, and infrastructure-as-code. We engineer resilient, scalable cloud environments on AWS, Azure, and GCP.</p>
+        <a href="cloud-engineering.html" class="service-card-link" style="color:var(--purple)">
+          Learn More
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="service-card reveal reveal-delay-3" tabindex="0">
+        <div class="service-card-icon" aria-hidden="true">💻</div>
+        <h3 class="service-card-title">Software & App Development</h3>
+        <p class="service-card-desc">Full-stack web, cross-platform mobile (React Native, Flutter), and enterprise SaaS platforms. Scalable architecture, clean code, and performance-first engineering.</p>
+        <a href="software-development.html" class="service-card-link">
+          Learn More
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- 6 mini service cards -->
+    <div class="services-mini-grid reveal" style="margin-top:24px;">
+      <div class="service-mini-card" tabindex="0">
+        <span class="service-mini-icon" aria-hidden="true">📊</span>
+        <div><div class="service-mini-name">Data Analytics & BI</div><div class="service-mini-desc">Insights-driven decisions</div></div>
+      </div>
+      <div class="service-mini-card" tabindex="0">
+        <span class="service-mini-icon" aria-hidden="true">🔒</span>
+        <div><div class="service-mini-name">Cybersecurity</div><div class="service-mini-desc">Zero Trust & SOC services</div></div>
+      </div>
+      <div class="service-mini-card" tabindex="0">
+        <span class="service-mini-icon" aria-hidden="true">🏢</span>
+        <div><div class="service-mini-name">Enterprise IT Consulting</div><div class="service-mini-desc">Strategic technology advisory</div></div>
+      </div>
+      <div class="service-mini-card" tabindex="0">
+        <span class="service-mini-icon" aria-hidden="true">⚙️</span>
+        <div><div class="service-mini-name">Process Automation</div><div class="service-mini-desc">RPA & workflow intelligence</div></div>
+      </div>
+      <div class="service-mini-card" tabindex="0">
+        <span class="service-mini-icon" aria-hidden="true">🌐</span>
+        <div><div class="service-mini-name">IoT & Edge Computing</div><div class="service-mini-desc">Connected device ecosystems</div></div>
+      </div>
+      <div class="service-mini-card" tabindex="0">
+        <span class="service-mini-icon" aria-hidden="true">🔗</span>
+        <div><div class="service-mini-name">Blockchain Solutions</div><div class="service-mini-desc">Decentralised enterprise apps</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-divider" aria-hidden="true"></div>
+
+<!-- ── METRICS SECTION ──────────────────────────────────────── -->
+<section id="metrics" aria-label="Company Impact Metrics">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;">Our Impact</div>
+      <h2 class="section-title">Numbers That Define Our Excellence</h2>
+    </div>
+    <div class="metrics-grid">
+      <div class="metric-card reveal reveal-delay-1">
+        <div class="metric-icon" aria-hidden="true">🌍</div>
+        <div class="metric-num" aria-label="200 plus global clients"><span data-count="200" data-suffix="+">0</span></div>
+        <div class="metric-label">Global Clients</div>
+      </div>
+      <div class="metric-card reveal reveal-delay-2">
+        <div class="metric-icon" aria-hidden="true">🚀</div>
+        <div class="metric-num" aria-label="50 plus enterprise projects"><span data-count="50" data-suffix="+">0</span></div>
+        <div class="metric-label">Enterprise Projects Delivered</div>
+      </div>
+      <div class="metric-card reveal reveal-delay-3">
+        <div class="metric-icon" aria-hidden="true">🗺️</div>
+        <div class="metric-num" aria-label="15 plus countries"><span data-count="15" data-suffix="+">0</span></div>
+        <div class="metric-label">Countries Served</div>
+      </div>
+      <div class="metric-card reveal reveal-delay-4">
+        <div class="metric-icon" aria-hidden="true">👨‍💻</div>
+        <div class="metric-num" aria-label="100 plus engineers"><span data-count="100" data-suffix="+">0</span></div>
+        <div class="metric-label">Engineers & Experts</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-divider" aria-hidden="true"></div>
+
+<!-- ── INSIGHTS SECTION ─────────────────────────────────────── -->
+<section id="insights" class="section-pad" aria-label="Latest Technology Insights">
+  <div class="container">
+    <div class="insights-header reveal">
+      <div>
+        <div class="section-label">Resources</div>
+        <h2 class="section-title">Latest Technology Insights</h2>
+      </div>
+      <a href="#" class="btn btn-outline btn-sm">View All Articles</a>
+    </div>
+    <div class="insights-grid">
+      <article class="insight-card reveal reveal-delay-1">
+        <div class="insight-card-img" aria-hidden="true">🤖</div>
+        <div class="insight-card-body">
+          <div class="insight-tag">AI & Machine Learning</div>
+          <h3 class="insight-card-title">How Generative AI Is Reshaping Enterprise Operations in 2026</h3>
+          <p class="insight-card-desc">From automated code generation to AI-driven customer support, generative AI has moved from novelty to necessity for Fortune 500 enterprises.</p>
+          <div class="insight-meta">
+            <span class="insight-date">March 2, 2026</span>
+            <a href="#" class="insight-link" aria-label="Read article: How Generative AI Is Reshaping Enterprise Operations">
+              Read Article
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="insight-card reveal reveal-delay-2">
+        <div class="insight-card-img" aria-hidden="true">☁️</div>
+        <div class="insight-card-body">
+          <div class="insight-tag">Cloud Engineering</div>
+          <h3 class="insight-card-title">Multi-Cloud Strategy: Why Enterprises Are Moving Beyond Single Providers</h3>
+          <p class="insight-card-desc">The shift toward multi-cloud architecture reduces vendor lock-in, improves resilience, and enables best-of-breed services across platforms.</p>
+          <div class="insight-meta">
+            <span class="insight-date">February 18, 2026</span>
+            <a href="#" class="insight-link" aria-label="Read article: Multi-Cloud Strategy">
+              Read Article
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="insight-card reveal reveal-delay-3">
+        <div class="insight-card-img" aria-hidden="true">🔒</div>
+        <div class="insight-card-body">
+          <div class="insight-tag">Cybersecurity</div>
+          <h3 class="insight-card-title">Zero Trust Architecture: Building Security for the Post-Perimeter World</h3>
+          <p class="insight-card-desc">Traditional perimeter-based security is obsolete. Learn how Zero Trust frameworks protect modern distributed workforces and cloud-native applications.</p>
+          <div class="insight-meta">
+            <span class="insight-date">February 5, 2026</span>
+            <a href="#" class="insight-link" aria-label="Watch video: Zero Trust Architecture">
+              Watch Video
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3" fill="currentColor"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="glow-divider" aria-hidden="true"></div>
+
+<!-- ── CASE STUDIES ──────────────────────────────────────────── -->
+<section id="case-studies" aria-label="Case Studies">
+  <div class="container">
+    <div class="reveal" style="text-align:center;margin-bottom:0;">
+      <div class="section-label" style="justify-content:center;">Proven Results</div>
+      <h2 class="section-title">Client Success Stories</h2>
+      <p class="section-subtitle" style="margin:0 auto;">Real-world outcomes from our enterprise technology partnerships across industries.</p>
+    </div>
+    <div class="case-studies-grid">
+      <div class="case-card reveal reveal-delay-1">
+        <span class="case-tag tag-health">Healthcare</span>
+        <h3 class="case-card-title">AI Diagnostics Platform for Regional Hospital Network</h3>
+        <p class="case-card-outcome">Deployed a computer vision-based radiology AI that reduced diagnostic time and improved accuracy for a 500-bed hospital chain across 8 locations.</p>
+        <div class="case-result">
+          <div class="case-metric"><div class="case-metric-num">40%</div><div class="case-metric-label">Faster Diagnosis</div></div>
+          <div class="case-metric"><div class="case-metric-num">92%</div><div class="case-metric-label">AI Accuracy</div></div>
+          <div class="case-metric"><div class="case-metric-num">$2M</div><div class="case-metric-label">Cost Saved/yr</div></div>
+        </div>
+        <a href="#" class="service-card-link text-cyan">Learn More →</a>
+      </div>
+      <div class="case-card reveal reveal-delay-2">
+        <span class="case-tag tag-fintech">FinTech</span>
+        <h3 class="case-card-title">Real-Time Fraud Detection Engine for Digital Bank</h3>
+        <p class="case-card-outcome">Built a machine learning fraud detection system processing 10M+ transactions per day for a leading Southeast Asian neobank, reducing fraud losses significantly.</p>
+        <div class="case-result">
+          <div class="case-metric"><div class="case-metric-num">99.7%</div><div class="case-metric-label">Detection Rate</div></div>
+          <div class="case-metric"><div class="case-metric-num">60%</div><div class="case-metric-label">Less Fraud</div></div>
+          <div class="case-metric"><div class="case-metric-num">&lt;50ms</div><div class="case-metric-label">Response Time</div></div>
+        </div>
+        <a href="#" class="service-card-link text-cyan">Learn More →</a>
+      </div>
+      <div class="case-card reveal reveal-delay-3">
+        <span class="case-tag tag-retail">Retail</span>
+        <h3 class="case-card-title">Omnichannel Commerce Platform for Fashion Retailer</h3>
+        <p class="case-card-outcome">Unified online and offline retail experiences with AI-driven personalisation, inventory intelligence, and mobile-first checkout for a 300-store chain.</p>
+        <div class="case-result">
+          <div class="case-metric"><div class="case-metric-num">35%</div><div class="case-metric-label">Revenue Uplift</div></div>
+          <div class="case-metric"><div class="case-metric-num">4.8★</div><div class="case-metric-label">App Rating</div></div>
+          <div class="case-metric"><div class="case-metric-num">2M+</div><div class="case-metric-label">Users</div></div>
+        </div>
+        <a href="#" class="service-card-link text-cyan">Learn More →</a>
+      </div>
+      <div class="case-card reveal reveal-delay-1">
+        <span class="case-tag tag-telecom">Telecom</span>
+        <h3 class="case-card-title">Network Operations AI for Tier-1 Telecom Operator</h3>
+        <p class="case-card-outcome">Implemented predictive network fault detection using ML and automated remediation workflows, dramatically reducing downtime for 50M+ subscribers.</p>
+        <div class="case-result">
+          <div class="case-metric"><div class="case-metric-num">70%</div><div class="case-metric-label">Less Downtime</div></div>
+          <div class="case-metric"><div class="case-metric-num">$5M</div><div class="case-metric-label">Savings/yr</div></div>
+          <div class="case-metric"><div class="case-metric-num">99.99%</div><div class="case-metric-label">Uptime SLA</div></div>
+        </div>
+        <a href="#" class="service-card-link text-cyan">Learn More →</a>
+      </div>
+      <div class="case-card reveal reveal-delay-2">
+        <span class="case-tag tag-logistics">Logistics</span>
+        <h3 class="case-card-title">Smart Supply Chain Platform for Global Logistics Firm</h3>
+        <p class="case-card-outcome">End-to-end supply chain visibility with IoT integration, predictive delivery analytics, and automated exception management across 20 countries.</p>
+        <div class="case-result">
+          <div class="case-metric"><div class="case-metric-num">25%</div><div class="case-metric-label">Cost Reduction</div></div>
+          <div class="case-metric"><div class="case-metric-num">98%</div><div class="case-metric-label">On-Time Delivery</div></div>
+          <div class="case-metric"><div class="case-metric-num">20</div><div class="case-metric-label">Countries</div></div>
+        </div>
+        <a href="#" class="service-card-link text-cyan">Learn More →</a>
+      </div>
+      <div class="case-card reveal reveal-delay-3">
+        <span class="case-tag tag-smart">Smart Cities</span>
+        <h3 class="case-card-title">Urban Mobility Intelligence Platform for Smart City</h3>
+        <p class="case-card-outcome">Built an integrated urban mobility platform with real-time traffic AI, public transport optimisation, and smart parking systems for a metropolitan government.</p>
+        <div class="case-result">
+          <div class="case-metric"><div class="case-metric-num">30%</div><div class="case-metric-label">Less Congestion</div></div>
+          <div class="case-metric"><div class="case-metric-num">1.2M</div><div class="case-metric-label">Citizens Benefited</div></div>
+          <div class="case-metric"><div class="case-metric-num">↓45%</div><div class="case-metric-label">Emissions</div></div>
+        </div>
+        <a href="#" class="service-card-link text-cyan">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-divider" aria-hidden="true"></div>
+
+<!-- ── TESTIMONIALS ──────────────────────────────────────────── -->
+<section id="testimonials" class="section-pad" aria-label="Client Testimonials">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Testimonials</div>
+      <h2 class="section-title">What Our Clients Say</h2>
+    </div>
+    <div class="testimonials-carousel" role="region" aria-label="Testimonials carousel">
+      <div class="testimonials-track" aria-live="polite">
+        <div class="testimonial-card" role="article">
+          <div class="testimonial-quote" aria-hidden="true">"</div>
+          <p class="testimonial-text">Acuron's AI team delivered a fraud detection system that exceeded every benchmark we set. Their technical depth and communication throughout the project was exceptional. We now process 10 million transactions daily with full confidence.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">RK</div>
+            <div><div class="testimonial-name">Rajiv Kumar</div><div class="testimonial-role">CTO, NeoBank Asia</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card" role="article">
+          <div class="testimonial-quote" aria-hidden="true">"</div>
+          <p class="testimonial-text">The cloud migration Acuron executed for us was flawless — zero downtime, 40% cost reduction, and a DevOps culture our team now loves. They're not just a vendor, they're a true technology partner.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">SM</div>
+            <div><div class="testimonial-name">Sarah Mitchell</div><div class="testimonial-role">VP Engineering, RetailMax</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card" role="article">
+          <div class="testimonial-quote" aria-hidden="true">"</div>
+          <p class="testimonial-text">Our hospital's diagnostic workflow is transformed. The AI system Acuron built has helped our radiologists catch cases faster and with higher precision. It's genuinely saving lives while reducing costs.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">AP</div>
+            <div><div class="testimonial-name">Dr. Anita Patel</div><div class="testimonial-role">Chief Medical Officer, MediCare Group</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card" role="article">
+          <div class="testimonial-quote" aria-hidden="true">"</div>
+          <p class="testimonial-text">From requirement gathering to production launch in 4 months — Acuron's agile team built our enterprise mobile app that now serves 2 million customers. The UX quality is world-class.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">JL</div>
+            <div><div class="testimonial-name">James Liu</div><div class="testimonial-role">CEO, FashionForward</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card" role="article">
+          <div class="testimonial-quote" aria-hidden="true">"</div>
+          <p class="testimonial-text">Acuron's cybersecurity team identified critical vulnerabilities our internal team had missed for years. Their Zero Trust implementation has given our board complete confidence in our security posture.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">BW</div>
+            <div><div class="testimonial-name">Ben Waldmann</div><div class="testimonial-role">CISO, GlobalFinance Corp</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials-nav">
+        <button id="tPrev" class="tNav-btn" aria-label="Previous testimonial">←</button>
+        <button id="tNext" class="tNav-btn" aria-label="Next testimonial">→</button>
+        <div class="tNav-dots" role="tablist" aria-label="Testimonial navigation">
+          <button class="tNav-dot active" role="tab" aria-label="Go to testimonial 1" aria-selected="true"></button>
+          <button class="tNav-dot" role="tab" aria-label="Go to testimonial 2"></button>
+          <button class="tNav-dot" role="tab" aria-label="Go to testimonial 3"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-divider" aria-hidden="true"></div>
+
+<!-- ── CAREERS BANNER ────────────────────────────────────────── -->
+<section id="careers-banner" aria-label="Careers at Acuron">
+  <div class="container">
+    <div class="careers-banner-inner reveal">
+      <div class="careers-banner-text">
+        <div class="section-label">Join Our Team</div>
+        <h2 class="section-title">Build the Future<br />with Acuron</h2>
+        <p class="section-subtitle">Join a team of 100+ engineers, architects, and innovators solving complex technology challenges for global enterprises.</p>
+        <div class="careers-perks">
+          <div class="perk-tag"><span>🌍</span> Remote-first</div>
+          <div class="perk-tag"><span>📚</span> Learning Budget</div>
+          <div class="perk-tag"><span>💰</span> Competitive Pay</div>
+          <div class="perk-tag"><span>🏥</span> Health Benefits</div>
+          <div class="perk-tag"><span>🚀</span> Fast Growth</div>
+        </div>
+        <div style="margin-top:32px;">
+          <a href="careers.html" class="btn btn-purple">
+            Explore Open Positions
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div style="text-align:center;font-size:8rem;opacity:0.3;" aria-hidden="true">👨‍💻</div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-divider" aria-hidden="true"></div>
+
+<!-- ── NEWSLETTER ────────────────────────────────────────────── -->
+<section id="newsletter" aria-label="Newsletter signup">
+  <div class="container">
+    <div class="newsletter-inner reveal">
+      <div class="section-label" style="justify-content:center;">Stay Updated</div>
+      <h2 class="section-title" style="font-size:1.8rem;text-align:center;">Technology Insights in Your Inbox</h2>
+      <p class="section-subtitle" style="text-align:center;margin:0 auto 0;">Join 10,000+ technology leaders receiving our weekly digest on AI, cloud, and enterprise tech trends.</p>
+      <form id="newsletter-form" class="newsletter-form" novalidate>
+        <label for="newsletter-email" class="sr-only">Email address</label>
+        <input
+          type="email"
+          id="newsletter-email"
+          class="newsletter-input"
+          placeholder="Enter your business email"
+          required
+          aria-required="true"
+        />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p style="font-size:0.75rem;color:var(--gray-600);text-align:center;margin-top:12px;">No spam. Unsubscribe anytime. Your data is protected under our Privacy Policy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────────────────── -->
+<footer id="footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-icon" aria-hidden="true">A</div>
+          Acuron <span>IT</span> Services
+        </div>
+        <p class="footer-brand-desc">Engineering Intelligent Digital Solutions for enterprises across the globe. AI-first, cloud-native, security-hardened technology consulting.</p>
+        <div class="footer-socials" aria-label="Social media links">
+          <a href="https://www.linkedin.com/in/acuron-it-services-1912163a8/" class="social-btn" aria-label="LinkedIn">in</a>
+          <a href="https://x.com/Acuronitservice" class="social-btn" aria-label="Twitter">𝕏</a>
+          <a href="https://www.instagram.com/acuron_it_services/" class="social-btn" aria-label="Instagram">📷</a>
+          <a href="https://youtube.com/@acuronitservice?si=b5BcK7AKZNxNz2aI" class="social-btn" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <!-- Services -->
+      <div>
+        <div class="footer-col-title">Services</div>
+        <nav class="footer-links" aria-label="Services">
+          <a href="ai-solutions.html" class="footer-link">AI Solutions</a>
+          <a href="cloud-engineering.html" class="footer-link">Cloud Engineering</a>
+          <a href="software-development.html" class="footer-link">Software Development</a>
+          <a href="cybersecurity.html" class="footer-link">Cybersecurity</a>
+          <a href="devops.html" class="footer-link">DevOps Automation</a>
+          <a href="data-analytics.html" class="footer-link">Data Analytics</a>
+        </nav>
+      </div>
+      <!-- Industries -->
+      <div>
+        <div class="footer-col-title">Industries</div>
+        <nav class="footer-links" aria-label="Industries">
+          <a href="finance.html" class="footer-link">Finance & FinTech</a>
+          <a href="healthcare.html" class="footer-link">Healthcare</a>
+          <a href="retail.html" class="footer-link">Retail & E-commerce</a>
+          <a href="manufacturing.html" class="footer-link">Manufacturing</a>
+          <a href="logistics.html" class="footer-link">Logistics</a>
+          <a href="smart-cities.html" class="footer-link">Smart Cities</a>
+        </nav>
+      </div>
+      <!-- Company -->
+      <div>
+        <div class="footer-col-title">Company</div>
+        <nav class="footer-links" aria-label="Company">
+          <a href="about.html" class="footer-link">About Acuron</a>
+          <a href="leadership.html" class="footer-link">Leadership</a>
+          <a href="mission.html" class="footer-link">Mission & Vision</a>
+          <a href="careers.html" class="footer-link">Careers</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+          <a href="global.html" class="footer-link">Global Presence</a>
+        </nav>
+      </div>
+      <!-- Resources -->
+      <div>
+        <div class="footer-col-title">Resources</div>
+        <nav class="footer-links" aria-label="Resources">
+          <a href="blog.html" class="footer-link">Blog</a>
+          <a href="case-studies.html" class="footer-link">Case Studies</a>
+          <a href="tech-insights.html" class="footer-link">Tech Insights</a>
+          <a href="whitepapers.html" class="footer-link">Whitepapers</a>
+          <a href="dashboard.html" class="footer-link">Client Portal</a>
+          <a href="partner.html" class="footer-link">Partner Program</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Acuron IT Services. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="termandprivacy.html" class="footer-bottom-link">Privacy Policy</a>
+        <a href="termandprivacy.html" class="footer-bottom-link">Terms of Service</a>
+        <a href="termandprivacy.html" class="footer-bottom-link">Cookie Policy</a>
+        <a href="termandprivacy.html" class="footer-bottom-link">Sitemap</a>
+      </div>
+      <div class="footer-secure">
+        <span class="shield" aria-hidden="true">🔒</span>
+        Secure Cloud Infrastructure
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Floating Buttons ──────────────────────────────────────── -->
+<button id="float-chat" aria-label="Open AI Chat assistant" title="Ask Acuron AI">💬</button>
+<button id="dark-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">☀️</button>
+
+<!-- ── Firebase SDK ──────────────────────────────────────────── -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+< ! - -   v 2   - - >  
+ <!-- v2 -->
